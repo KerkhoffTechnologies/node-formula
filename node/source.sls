@@ -1,5 +1,5 @@
 {% set node = pillar.get('node', {}) -%}
-{% set version = node.get('version', '5.1.0') -%}
+{% set version = node.get('version', '5.7.0') -%}
 {% set checksum = node.get('checksum', '25b2d3b7dd57fe47a483539fea240a3c6bbbdab4d89a45a812134cf1380ecb94') -%}
 {% set make_jobs = node.get('make_jobs', '1') -%}
 

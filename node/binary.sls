@@ -1,6 +1,6 @@
 {% set node = pillar.get('node', {}) -%}
-{% set version = node.get('version', '5.4.0') -%}
-{% set checksum = node.get('checksum', 'f037e2734f52b9de63e6d4a4e80756477b843e6f106e0be05591a16b71ec2bd0') -%}
+{% set version = node.get('version', '5.7.0') -%}
+{% set checksum = node.get('checksum', '25b2d3b7dd57fe47a483539fea240a3c6bbbdab4d89a45a812134cf1380ecb94') -%}
 {% set pkgname = 'node-v' ~ version ~ '-linux-x64' -%}
 
 Get binary package:

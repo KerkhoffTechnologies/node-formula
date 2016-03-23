@@ -1,3 +1,9 @@
+{% macro sls_block(dict) -%}
+    {% for key, value in dict.items() -%}
+    - {{ key }}: {{ value|json() }}
+    {% endfor -%}
+{% endmacro -%}
+
 {% set pillar_get = salt['pillar.get'] -%}
 
 {% if pillar_get('node:install_from_source') %}
@@ -32,3 +38,4 @@
 {% else %}
 {% set npm_requirement = 'pkg: {0}'.format(node['npm_pkg']) %}
 {% endif %}
+

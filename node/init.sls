@@ -8,3 +8,4 @@ include:
   - .pkg
 {%- endif %}
   - .config
+  - .npm
